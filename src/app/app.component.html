@@ -1,17 +1,10 @@
-<div class="testimony">
-  <div class="testimony-item">
-    <button (click)="counter_testimony(-1)">
-        &#60;
-    </button>
-    <div class="content">
-      <img [src]="testimony[active_index].photo_URL" alt="photo">
-      <p class="testimony-text">{{testimony[active_index].content}}</p>
-      <p class="name">{{testimony[active_index].name}}</p>
-      <p class="university">{{testimony[active_index].university}}</p>
-    </div>
-    <button  (click)="counter_testimony(1)">
-        &#62;
-    </button>
+<div class="container">
+  <div class="navbar">
+    <p>Home</p>
+    <p>Contact</p>
+    <button (click)="logout()">Logout</button>
   </div>
+  <div class="notification">
+    <span>Kamu keluar dari akun</span>
+  </div> 
 </div>
-<router-outlet></router-outlet>
